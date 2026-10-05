@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: ElegantIcons;
+}
+
+body {
+    background-color: white;
+    font-family: ElegantIcons;
+}
+
+@font-face {
+    font-family: ElegantIcons;
+    src: url(assets/font/HuaweiSans-Bold.woff2);
+}
+
+header {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.top-header {
+    border-bottom: 1px solid rgb(103, 143, 160);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background-color: rgb(31, 50, 58);
+    align-items: center;
+}
+
+.right-items {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 5px 15px;
+    gap: 20px;
+}
+
+.about-svg {
+    display: flex;
+    align-items: center;
+}
+
+.about-svg a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.left-items {
+    color: white;
+    margin: 5px 15px;
+    font-size: 10px;
+}
+
+.about-color {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.bag {
+    display: flex;
+    align-items: center;
+}
+
+.down-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 15px;
+}
+
+.down-header a {
+    text-decoration: none;
+    color: rgb(31, 50, 58);
+    padding: 15px;
+}
+
+.main-down {
+    border: 1px solid rgb(194, 194, 194);
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px 15px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.menu ul {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(31, 50, 58);
+    padding: 15px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.menu a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(31, 50, 58);
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    transition: .5s;
+}
+
+.menu a:hover::after {
+    left: 0;
+}
+
+.shopping {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.shope a {
+    text-decoration: none;
+    color: gray;
+    padding: 10px 15px;
+}
+
+#color {
+    color: rgb(31, 50, 58);
+}
+
+.shopping {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.shope a {
+    text-decoration: none;
+    color: gray;
+    padding: 10px 15px;
+}
+
+#color {
+    color: rgb(31, 50, 58);
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 8%;
+    align-items: flex-start;
+}
+
+.side {
+    width: 25%;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    margin-bottom: 8%;
+    color: gray;
+    padding-bottom: 10px;
+}
+
+.list {
+    margin-bottom: 10%;
+}
+
+.list h2 {
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 40px;
+    color: rgb(99, 97, 137);
+}
+
+.list ul li {
+    padding: 10px;
+}
+
+.list a {
+    text-decoration: none;
+    color: rgb(31, 50, 58);
+}
+
+.filter h2 {
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 40px;
+    color: rgb(99, 97, 137);
+}
+
+.for-line {
+    border: 1px solid black;
+    width: 55%;
+    margin-bottom: 10%;
+}
+
+.Price {
+    display: flex;
+    gap: 10px;
+}
+
+.Price a {
+    background-color: rgb(185, 181, 225);
+    text-decoration: none;
+    color: rgb(31, 50, 58);
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.watch-photo {
+    margin-top: 20%;
+}
+
+.main-product {
+    width: 58%;
+}
+
+.first-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.default {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.default a {
+    text-decoration: none;
+    color: gray;
+}
+
+.text {
+    color: gray;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.about-card {
+    width: 47%;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-card img {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+.second-picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s;
+    overflow: hidden;
+    height: 360px;
+}
+.second-picture img{
+    overflow: hidden;
+    height: 380px;
+}
+
+.about-card:hover .second-picture {
+    opacity: 1;
+}
+
+.first-svg {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.second-svg {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.text-line {
+    background-color: rgb(185, 181, 225);
+    color: white;
+    padding: 10px 15px;
+    color: black;
+
+}
+
+.text-line h2 {
+    margin-bottom: 10px;
+    color: gray;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+.text-line h3 {
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.first-text {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.first-text h3{
+    margin-right: 15px;
+}
+
+.buy {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    opacity: 0;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    transition: .5s;
+    border-bottom: 1px solid black;
+    font-size: 12px;
+}
+
+.about-card:hover .buy {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+.about-card:hover p {
+    opacity: 0;
+}
+
+.next {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+    gap: 20px;
+}
+
+.end-box ul {
+    display: flex;
+    gap: 30px;
+}
+
+.end-box a {
+    text-decoration: none;
+    color: gray;
+}
+
+#first {
+    color: black;
+}
+
+footer {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(17, 35, 45);
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.first-menu {
+    color: white;
+    width: 18%;
+}
+
+.first-menu a {
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: .8s;
+    color: rgb(183, 183, 183);
+}
+
+.first-menu a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    transition: .5s;
+}
+
+.first-menu a:hover::after {
+    left: 0;
+}
+
+.first-menu a:hover {
+    color: white;
+}
+
+.first-menu ul li {
+    margin-bottom: 30px;
+}
+
+.first-menu ul li h2 {
+    margin-bottom: 20px;
+}
+
+.main-menu {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    gap: 150px;
+    justify-content: center;
+}
+
+.left-item {
+    width: 30%;
+    margin-left: 20px;
+    color: white;
+    border-right: 1px solid white;
+    height: 300px;
+}
+
+.left-item h2 {
+    margin-bottom: 50px;
+}
+
+.about-email {
+    display: flex;
+    border-bottom: 1px solid white;
+    width: 35%;
+    margin-bottom: 40px;
+    color: white;
+    justify-content: space-between;
+}
+
+.down-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(197, 197, 197);
+    padding-top: 40px;
+    margin: 0 20px;
+}
+
+.about-brands {
+    gap: 3px;
+}
+
+.logo {
+    width: 20%;
+}
+
+.about-brands a {
+    text-decoration: none;
+    color: rgb(191, 191, 191);
+}
+
+.about-link a {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: ElegantIcons;
+}
+
+body {
+    background-color: white;
+    font-family: ElegantIcons;
+}
+
+@font-face {
+    font-family: ElegantIcons;
+    src: url(assets/font/HuaweiSans-Bold.woff2);
+}
+
+header {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.top-header {
+    border-bottom: 1px solid rgb(103, 143, 160);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background-color: rgb(31, 50, 58);
+    align-items: center;
+}
+
+.right-items {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 5px 15px;
+    gap: 20px;
+}
+
+.about-svg {
+    display: flex;
+    align-items: center;
+}
+
+.about-svg a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.left-itemss {
+    color: white;
+    margin: 5px 15px;
+    font-size: 10px;
+}
+
+.about-color {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.bag {
+    display: flex;
+    align-items: center;
+}
+
+.down-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 15px;
+}
+
+.down-header a {
+    text-decoration: none;
+    color: rgb(31, 50, 58);
+    padding: 15px;
+}
+
+.main-down {
+    border: 1px solid rgb(194, 194, 194);
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px 15px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.menu ul {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(31, 50, 58);
+    padding: 15px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.menu a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(31, 50, 58);
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    transition: .5s;
+}
+
+.menu a:hover::after {
+    left: 0;
+}
+
+.about-services {
+    width: 100%;
+    position: relative;
+    height: 570px;
+}
+
+.type {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: white;
+    font-size: 30px;
+    transform: translate(-50%, -30%);
+    width: 50%;
+}
+
+.type h1 {
+    margin: 0;
+    text-align: center;
+}
+.questions{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.first{
+    width: 40%;
+}
+.describe h2{
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: rgb(79, 78, 110);
+}
+.describe p{
+    font-size: 15px;
+    color: rgb(155, 155, 155);
+    padding-bottom: 10px;
+}
+.describe{
+    position: relative;
+}
+.describe::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(14, 0, 69);
+    top: 0;
+    position: absolute;
+}
+.describe::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(14, 0, 69);
+    position: absolute;
+    bottom: 0;
+}
+.discuss{
+    margin-top: 20px;
+    position: relative;
+    padding: 20px 0;
+    margin-top: 2px;
+}
+.discuss a{
+    text-decoration: none;
+    color: rgb(79, 78, 110);
+    display: inline-block;
+}
+.discuss::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(197, 197, 197);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.second{
+    width: 40%;
+}
+.about-us h2{
+    margin-bottom: 15px;
+    color: rgb(79, 78, 110);
+}
+.about-us p{
+    color: rgb(155, 155, 155);
+}
+#us{
+    margin-top: 8%;
+}
+#us p{
+    margin-bottom: 10px;
+}
+.img{
+    width: 45%;
+    margin-top: 8%;
+}
+footer {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(17, 35, 45);
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.first-menu {
+    color: white;
+    width: 18%;
+}
+
+.first-menu a {
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: .8s;
+    color: rgb(183, 183, 183);
+}
+
+.first-menu a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    transition: .5s;
+}
+
+.first-menu a:hover::after {
+    left: 0;
+}
+
+.first-menu a:hover {
+    color: white;
+}
+
+.first-menu ul li {
+    margin-bottom: 30px;
+}
+
+.first-menu ul li h2 {
+    margin-bottom: 20px;
+}
+
+.main-menu {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    gap: 150px;
+    justify-content: center;
+}
+
+.left-item {
+    width: 30%;
+    margin-left: 20px;
+    color: white;
+    border-right: 1px solid white;
+    height: 300px;
+}
+
+.left-item h2 {
+    margin-bottom: 50px;
+}
+
+.about-email {
+    display: flex;
+    border-bottom: 1px solid white;
+    width: 35%;
+    margin-bottom: 40px;
+    color: white;
+    justify-content: space-between;
+}
+
+.down-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(197, 197, 197);
+    padding-top: 40px;
+    margin: 0 20px;
+}
+
+.about-brands {
+    gap: 3px;
+}
+
+.logo {
+    width: 20%;
+}
+
+.about-brands a {
+    text-decoration: none;
+    color: rgb(191, 191, 191);
+}
+
+.about-link a {
+    text-decoration: none;
+    color: white;
+}

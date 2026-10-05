@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: ElegantIcons;
+}
+
+body {
+    background-color: white;
+    font-family: ElegantIcons;
+}
+
+@font-face {
+    font-family: ElegantIcons;
+    src: url(assets/font/HuaweiSans-Bold.woff2);
+}
+
+header {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.top-header {
+    border-bottom: 1px solid rgb(103, 143, 160);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background-color: rgb(31, 50, 58);
+    align-items: center;
+}
+
+.right-items {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 5px 15px;
+    gap: 20px;
+}
+
+.about-svg {
+    display: flex;
+    align-items: center;
+}
+
+.about-svg a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.left-items {
+    color: white;
+    margin: 5px 15px;
+    font-size: 10px;
+}
+
+.about-color {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.bag {
+    display: flex;
+    align-items: center;
+}
+
+.down-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 15px;
+}
+
+.down-header a {
+    text-decoration: none;
+    color: rgb(31, 50, 58);
+    padding: 15px;
+}
+
+.main-down {
+    border: 1px solid rgb(194, 194, 194);
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px 15px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.menu ul {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(31, 50, 58);
+    padding: 15px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.menu a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(31, 50, 58);
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    transition: .5s;
+}
+
+.menu a:hover::after {
+    left: 0;
+}
+
+.about-services {
+    width: 100%;
+    position: relative;
+    height: 570px;
+}
+
+.type {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+.type h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.product {
+    width: 100%;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.photos {
+    display: flex;
+    width: 48%;
+    gap: 20px;
+}
+
+.watch {
+    width: 30%;
+}
+
+.bags {
+    width: 30%;
+    margin-top: 10%;
+}
+
+.texts {
+    width: 40%;
+    height: 350PX;
+}
+
+.texts h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.texts p {
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+
+.texts a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 15px 20px;
+    transition: .4s;
+}
+
+.texts a:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.teams {
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+    height: 300px;
+    margin-top: 10%;
+}
+
+.card {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    width: 26%;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: center;
+}
+
+.one {
+    width: 15%
+}
+
+.write h2 {
+    margin-bottom: 10px;
+}
+
+.main-cover {
+    width: 100%;
+}
+
+.main-cover img {
+    display: block;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(100%);
+
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+
+}
+
+.animation {
+    width: 100%;
+}
+
+.trends {
+    background-color: rgb(31, 50, 58);
+    color: white;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.first {
+    width: 100%;
+    padding: 20px 0;
+    animation: move 35s infinite linear;
+    display: flex;
+    gap: 70px;
+}
+
+.first h2 {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.industry {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.fashon {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#move {
+    flex-direction: row-reverse;
+}
+
+.blue-watch {
+    width: 48%;
+}
+
+.blue-watch img {
+    display: block;
+}
+
+.info {
+    width: 46%;
+}
+
+.info h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.info p {
+    margin-bottom: 60px;
+    font-size: 20px;
+}
+
+.info a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    transition: .4s;
+}
+
+.info a:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.cover {
+    width: 100%;
+    position: relative;
+    margin-top: 10%;
+}
+
+.pic {
+    width: 100%;
+}
+
+.pic img {
+    display: block;
+}
+
+.text-pic {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
+.text-pic h2 {
+    margin-bottom: 30px;
+}
+
+.text-pic p {
+    color: rgb(62, 26, 26);
+    font-size: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(17, 35, 45);
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.first-menu {
+    color: white;
+    width: 18%;
+}
+
+.first-menu a {
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: .8s;
+    color: rgb(183, 183, 183);
+}
+
+.first-menu a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    transition: .5s;
+}
+
+.first-menu a:hover::after {
+    left: 0;
+}
+
+.first-menu a:hover {
+    color: white;
+}
+
+.first-menu ul li {
+    margin-bottom: 30px;
+}
+
+.first-menu ul li h2 {
+    margin-bottom: 20px;
+}
+
+.main-menu {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    gap: 150px;
+    justify-content: center;
+}
+
+.left-item {
+    width: 30%;
+    margin-left: 20px;
+    color: white;
+    border-right: 1px solid white;
+    height: 300px;
+}
+
+.left-item h2 {
+    margin-bottom: 50px;
+}
+
+.about-email {
+    display: flex;
+    border-bottom: 1px solid white;
+    width: 35%;
+    margin-bottom: 40px;
+    color: white;
+    justify-content: space-between;
+}
+
+.down-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(197, 197, 197);
+    padding-top: 40px;
+    margin: 0 20px;
+}
+
+.about-brands {
+    gap: 3px;
+}
+
+.logo {
+    width: 20%;
+}
+
+.about-brands a {
+    text-decoration: none;
+    color: rgb(191, 191, 191);
+}
+
+.about-link a {
+    text-decoration: none;
+    color: white;
+}

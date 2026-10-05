@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: ElegantIcons;
+}
+
+body {
+    background-color: white;
+    font-family: ElegantIcons;
+}
+
+@font-face {
+    font-family: ElegantIcons;
+    src: url(assets/font/HuaweiSans-Bold.woff2);
+}
+
+header {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.top-header {
+    border-bottom: 1px solid rgb(103, 143, 160);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background-color: rgb(31, 50, 58);
+    align-items: center;
+}
+
+.right-items {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 5px 15px;
+    gap: 20px;
+}
+
+.about-svg {
+    display: flex;
+    align-items: center;
+}
+
+.about-svg a {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.left-itemss {
+    color: white;
+    margin: 5px 15px;
+    font-size: 10px;
+}
+
+.about-color {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.bag {
+    display: flex;
+    align-items: center;
+}
+
+.down-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 15px;
+}
+
+.down-header a {
+    text-decoration: none;
+    color: rgb(31, 50, 58);
+    padding: 15px;
+}
+
+.main-down {
+    border: 1px solid rgb(194, 194, 194);
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px 15px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.menu ul {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(31, 50, 58);
+    padding: 15px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.menu a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(31, 50, 58);
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    transition: .5s;
+}
+
+.menu a:hover::after {
+    left: 0;
+}
+
+.about-services {
+    width: 100%;
+    position: relative;
+    height: 570px;
+}
+
+.type {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: white;
+    font-size: 30px;
+    transform: translate(-50%, -30%);
+    width: 50%;
+}
+
+.type h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.popular {
+    width: 100%;
+    position: sticky;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.social-media {
+    width: 40%;
+    position: sticky;
+    top: 20px;
+}
+
+.post {
+    width: 100%;
+}
+
+.items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.items img {
+    width: 25%;
+    height: 150px;
+}
+
+.materials {
+    width: 70%;
+    padding-left: 30px;
+}
+.materials p{
+    margin-top: 30px;
+}
+
+.subject {
+    width: 70%;
+    margin: 40px 0;
+}
+
+.fashon {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.fashon a {
+    text-decoration: none;
+    color: rgb(76, 76, 76);
+    padding: 10px 0;
+}
+
+.insta {
+    width: 70%;
+}
+
+.pic {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.pic img {
+    width: 50%;
+}
+
+.follow {
+    width: 70%;
+    margin: 40px 0;
+}
+
+.brands {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.brands a {
+    padding: 20px 0;
+    padding-right: 15px;
+    color: rgb(5, 5, 49);
+    text-decoration: none;
+}
+
+.tags {
+    width: 70%;
+}
+
+.about-tag {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.about-tag a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    background-color: rgb(182, 182, 182);
+    transition: .4s;
+
+}
+.about-tag a:hover{
+    background-color: black;
+    color: white;
+}
+.left-items{
+    width: 43%;
+    color: black;
+}
+.first{
+    width: 100%;
+    position: relative;
+}
+.first span{
+    position: absolute;
+    top: 0;
+    right: 5%;
+    background-color: rgb(31, 50, 58);
+    color: white;
+    padding: 10px 15px;
+}
+.first p{
+    color: rgb(104, 104, 104);
+    margin: 20px 0;
+}
+.first a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    transition: .4s;
+}
+.first a:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+.card{
+    width: 100%;
+    background-color: rgba(200, 152, 205, 0.577);
+    margin-top: 50px;
+    padding: 20px 30px;
+}
+.title{
+    display: flex;
+    height: 100px;
+    align-items: flex-start;
+}
+.title h2{
+    margin-bottom: 20px;
+}
+.title p{
+    color: rgb(151, 150, 150);
+}
+#about-first{
+    margin-top: 8%;
+}
+.second{
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: picture 3s infinite alternate linear;
+}
+@keyframes picture {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+    
+}
+footer {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(17, 35, 45);
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.first-menu {
+    color: white;
+    width: 18%;
+}
+
+.first-menu a {
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: .8s;
+    color: rgb(183, 183, 183);
+}
+
+.first-menu a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    transition: .5s;
+}
+
+.first-menu a:hover::after {
+    left: 0;
+}
+
+.first-menu a:hover {
+    color: white;
+}
+
+.first-menu ul li {
+    margin-bottom: 30px;
+}
+
+.first-menu ul li h2 {
+    margin-bottom: 20px;
+}
+
+.main-menu {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    gap: 150px;
+    justify-content: center;
+}
+
+.left-item {
+    width: 30%;
+    margin-left: 20px;
+    color: white;
+    border-right: 1px solid white;
+    height: 300px;
+}
+
+.left-item h2 {
+    margin-bottom: 50px;
+}
+
+.about-email {
+    display: flex;
+    border-bottom: 1px solid white;
+    width: 35%;
+    margin-bottom: 40px;
+    color: white;
+    justify-content: space-between;
+}
+
+.down-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(197, 197, 197);
+    padding-top: 40px;
+    margin: 0 20px;
+}
+
+.about-brands {
+    gap: 3px;
+}
+
+.logo {
+    width: 20%;
+}
+
+.about-brands a {
+    text-decoration: none;
+    color: rgb(191, 191, 191);
+}
+
+.about-link a {
+    text-decoration: none;
+    color: white;
+}
+
